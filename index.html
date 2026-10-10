@@ -161,6 +161,7 @@
   .card:hover .cover .win{transform:translateY(10px) scale(1.03)}
   .win .bar{height:18px;background:#F4F6FB;display:flex;gap:4px;align-items:center;padding:0 8px}
   .win .bar i{width:6px;height:6px;border-radius:50%;background:#FFB6D0}.win .bar i:nth-child(2){background:#FFE3A2}.win .bar i:nth-child(3){background:#B9E7CC}
+  .win .shot{display:block;width:100%;height:calc(100% - 18px);object-fit:cover;object-position:top center}
   .win .body{padding:10px;display:grid;grid-template-columns:1fr 2fr;gap:6px}
   .win .body b{display:block;height:100%;border-radius:6px;background:linear-gradient(135deg,var(--sky),var(--lav))}
   .win .body s{display:block;height:8px;border-radius:4px;background:#EEF2FA;margin-bottom:6px;text-decoration:none}
@@ -341,25 +342,33 @@
       <div class="cover g1"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><b></b><div><s></s><s></s><s></s></div></div></div></div>
       <div class="body"><h3>Smart Study OS <span class="arrow">→</span></h3><p>A calm study planner with a focus timer, streaks, and a dashboard that makes "I studied today" feel like a win.</p><div class="tags"><span>React</span><span>Planner</span><span>Extension</span></div></div>
     </a>
-    <a class="card rv d1" href="#">
-      <div class="cover g2"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><b></b><div><s></s><s></s><s></s></div></div></div></div>
+    <a class="card rv d1" href="/finsight/">
+      <div class="cover g2"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/finsight.jpg" alt="FinSight screenshot" loading="lazy"></div></div>
       <div class="body"><h3>FinSight <span class="arrow">→</span></h3><p>Expense tracking and budgets with analytics that are actually pretty to look at.</p><div class="tags"><span>Charts</span><span>Budgets</span></div></div>
     </a>
-    <a class="card rv d1" href="#">
-      <div class="cover g3"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><b></b><div><s></s><s></s><s></s></div></div></div></div>
+    <a class="card rv d1" href="/memory-matrix/">
+      <div class="cover g3"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/memory-matrix.jpg" alt="Memory Matrix screenshot" loading="lazy"></div></div>
       <div class="body"><h3>Memory Matrix <span class="arrow">→</span></h3><p>A pattern-recognition game that gets sneakier the better you get.</p><div class="tags"><span>Game</span><span>Canvas</span></div></div>
     </a>
-    <a class="card rv d2" href="#">
-      <div class="cover g4"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><b></b><div><s></s><s></s><s></s></div></div></div></div>
+    <a class="card rv d2" href="/cybersphere/">
+      <div class="cover g4"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/cybersphere.jpg" alt="CyberSphere screenshot" loading="lazy"></div></div>
       <div class="body"><h3>CyberSphere <span class="arrow">→</span></h3><p>Cybersecurity simulations and a threat dashboard for learning by poking at things.</p><div class="tags"><span>Security</span><span>Sim</span></div></div>
     </a>
-    <a class="card rv d3" href="#">
-      <div class="cover g5"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><b></b><div><s></s><s></s><s></s></div></div></div></div>
+    <a class="card rv d3" href="/datalens/">
+      <div class="cover g5"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/datalens.jpg" alt="DataLens Lab screenshot" loading="lazy"></div></div>
       <div class="body"><h3>DataLens Lab <span class="arrow">→</span></h3><p>Drop in a dataset, explore it, and make charts you'd actually put in a slide.</p><div class="tags"><span>Data</span><span>Viz</span></div></div>
     </a>
-    <a class="card rv d4" href="#">
-      <div class="cover g6"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><b></b><div><s></s><s></s><s></s></div></div></div></div>
+    <a class="card rv d4" href="/campus-tycoon/">
+      <div class="cover g6"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/campus-tycoon.jpg" alt="Campus Tycoon screenshot" loading="lazy"></div></div>
       <div class="body"><h3>Campus Tycoon <span class="arrow">→</span></h3><p>Run a campus, keep students happy, and don't go broke. Harder than it sounds.</p><div class="tags"><span>Sim</span><span>Game</span></div></div>
+    </a>
+    <a class="card rv d4" href="/code-runner/">
+      <div class="cover g3"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/code-runner.jpg" alt="Code Runner screenshot" loading="lazy"></div></div>
+      <div class="body"><h3>Code Runner <span class="arrow">→</span></h3><p>A programming puzzle game where you write short command sequences to escape each level.</p><div class="tags"><span>Game</span><span>Puzzle</span></div></div>
+    </a>
+    <a class="card rv d4" href="/logicgrid/">
+      <div class="cover g4"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/logicgrid.jpg" alt="LogicGrid screenshot" loading="lazy"></div></div>
+      <div class="body"><h3>LogicGrid <span class="arrow">→</span></h3><p>A logic and pattern-solving puzzle game.</p><div class="tags"><span>Game</span><span>Logic</span></div></div>
     </a>
   </div>
   <div class="more rv"><a class="btn ghost" href="#">see all 11 projects</a></div>

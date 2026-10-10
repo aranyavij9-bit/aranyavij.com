@@ -1,0 +1,88 @@
+{
+  "rewrites": [
+    {
+      "source": "/finsight",
+      "destination": "https://aranyavij-finsight.vercel.app/"
+    },
+    {
+      "source": "/finsight/",
+      "destination": "https://aranyavij-finsight.vercel.app/"
+    },
+    {
+      "source": "/finsight/:path+",
+      "destination": "https://aranyavij-finsight.vercel.app/:path+"
+    },
+    {
+      "source": "/datalens",
+      "destination": "https://aranyavij-datalens.vercel.app/"
+    },
+    {
+      "source": "/datalens/",
+      "destination": "https://aranyavij-datalens.vercel.app/"
+    },
+    {
+      "source": "/datalens/:path+",
+      "destination": "https://aranyavij-datalens.vercel.app/:path+"
+    },
+    {
+      "source": "/code-runner",
+      "destination": "https://aranyavij-code-runner.vercel.app/"
+    },
+    {
+      "source": "/code-runner/",
+      "destination": "https://aranyavij-code-runner.vercel.app/"
+    },
+    {
+      "source": "/code-runner/:path+",
+      "destination": "https://aranyavij-code-runner.vercel.app/:path+"
+    },
+    {
+      "source": "/logicgrid",
+      "destination": "https://aranyavij-logicgrid.vercel.app/"
+    },
+    {
+      "source": "/logicgrid/",
+      "destination": "https://aranyavij-logicgrid.vercel.app/"
+    },
+    {
+      "source": "/logicgrid/:path+",
+      "destination": "https://aranyavij-logicgrid.vercel.app/:path+"
+    },
+    {
+      "source": "/memory-matrix",
+      "destination": "https://aranyavij-memory-matrix.vercel.app/"
+    },
+    {
+      "source": "/memory-matrix/",
+      "destination": "https://aranyavij-memory-matrix.vercel.app/"
+    },
+    {
+      "source": "/memory-matrix/:path+",
+      "destination": "https://aranyavij-memory-matrix.vercel.app/:path+"
+    },
+    {
+      "source": "/campus-tycoon",
+      "destination": "https://aranyavij-campus-tycoon.vercel.app/"
+    },
+    {
+      "source": "/campus-tycoon/",
+      "destination": "https://aranyavij-campus-tycoon.vercel.app/"
+    },
+    {
+      "source": "/campus-tycoon/:path+",
+      "destination": "https://aranyavij-campus-tycoon.vercel.app/:path+"
+    },
+    {
+      "source": "/cybersphere",
+      "destination": "https://aranyavij-cybersphere.vercel.app/"
+    },
+    {
+      "source": "/cybersphere/",
+      "destination": "https://aranyavij-cybersphere.vercel.app/"
+    },
+    {
+      "source": "/cybersphere/:path+",
+      "destination": "https://aranyavij-cybersphere.vercel.app/:path+"
+    }
+  ]
+}
