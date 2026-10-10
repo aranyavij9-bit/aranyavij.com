@@ -151,8 +151,8 @@
   /* projects */
   .proj-wrap{background:linear-gradient(180deg,var(--cream) 0%,#F3F6FF 50%,#FFF3F7 100%)}
   .filters{display:flex;justify-content:center;gap:8px;margin-bottom:34px;flex-wrap:wrap}
-  .filters a{padding:9px 16px;border-radius:999px;background:#fff;border:1px solid #EEF2FA;font-weight:800;font-size:13.5px;color:var(--muted);transition:.2s}
-  .filters a.on,.filters a:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .filters button{font-family:inherit;cursor:pointer;padding:9px 16px;border-radius:999px;background:#fff;border:1px solid #EEF2FA;font-weight:800;font-size:13.5px;color:var(--muted);transition:.2s}
+  .filters button.on,.filters button:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid #F1F3FA;box-shadow:0 12px 34px rgba(42,59,107,.07);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;transform-style:preserve-3d;position:relative}
   .card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(79,140,247,.14)}
@@ -185,6 +185,9 @@
   .featured{grid-column:span 2}
   .featured .cover{height:260px}
   .more{text-align:center;margin-top:34px}
+  .more button{font-family:inherit;cursor:pointer;background:#fff}
+  .grid:not(.open) .card.extra{display:none}
+  .card.hide{display:none!important}
 
   /* journey */
   .journey{position:relative;width:min(940px,92vw);margin:0 auto}
@@ -336,42 +339,42 @@
     <h2>projects with a <em>pulse</em>.</h2>
     <p>Eleven little worlds. Each one started as a sticky note and ended as something you can click.</p>
   </div>
-  <div class="filters rv"><a class="on" href="#">all</a><a href="#">productivity</a><a href="#">games</a><a href="#">data</a><a href="#">security</a></div>
+  <div class="filters rv"><button type="button" class="on" data-f="all">all</button><button type="button" data-f="productivity">productivity</button><button type="button" data-f="games">games</button><button type="button" data-f="data">data</button><button type="button" data-f="security">security</button></div>
   <div class="grid">
-    <a class="card featured rv" href="#">
+    <a class="card featured rv" data-cat="productivity" href="#">
       <div class="cover g1"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><b></b><div><s></s><s></s><s></s></div></div></div></div>
       <div class="body"><h3>Smart Study OS <span class="arrow">→</span></h3><p>A calm study planner with a focus timer, streaks, and a dashboard that makes "I studied today" feel like a win.</p><div class="tags"><span>React</span><span>Planner</span><span>Extension</span></div></div>
     </a>
-    <a class="card rv d1" href="/finsight/">
+    <a class="card rv d1" data-cat="productivity data" href="/finsight/">
       <div class="cover g2"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/finsight.jpg" alt="FinSight screenshot" loading="lazy"></div></div>
       <div class="body"><h3>FinSight <span class="arrow">→</span></h3><p>Expense tracking and budgets with analytics that are actually pretty to look at.</p><div class="tags"><span>Charts</span><span>Budgets</span></div></div>
     </a>
-    <a class="card rv d1" href="/memory-matrix/">
+    <a class="card rv d1" data-cat="games" href="/memory-matrix/">
       <div class="cover g3"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/memory-matrix.jpg" alt="Memory Matrix screenshot" loading="lazy"></div></div>
       <div class="body"><h3>Memory Matrix <span class="arrow">→</span></h3><p>A pattern-recognition game that gets sneakier the better you get.</p><div class="tags"><span>Game</span><span>Canvas</span></div></div>
     </a>
-    <a class="card rv d2" href="/cybersphere/">
+    <a class="card rv d2" data-cat="security" href="/cybersphere/">
       <div class="cover g4"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/cybersphere.jpg" alt="CyberSphere screenshot" loading="lazy"></div></div>
       <div class="body"><h3>CyberSphere <span class="arrow">→</span></h3><p>Cybersecurity simulations and a threat dashboard for learning by poking at things.</p><div class="tags"><span>Security</span><span>Sim</span></div></div>
     </a>
-    <a class="card rv d3" href="/datalens/">
+    <a class="card rv d3" data-cat="data" href="/datalens/">
       <div class="cover g5"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/datalens.jpg" alt="DataLens Lab screenshot" loading="lazy"></div></div>
       <div class="body"><h3>DataLens Lab <span class="arrow">→</span></h3><p>Drop in a dataset, explore it, and make charts you'd actually put in a slide.</p><div class="tags"><span>Data</span><span>Viz</span></div></div>
     </a>
-    <a class="card rv d4" href="/campus-tycoon/">
+    <a class="card rv d4 extra" data-cat="games" href="/campus-tycoon/">
       <div class="cover g6"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/campus-tycoon.jpg" alt="Campus Tycoon screenshot" loading="lazy"></div></div>
       <div class="body"><h3>Campus Tycoon <span class="arrow">→</span></h3><p>Run a campus, keep students happy, and don't go broke. Harder than it sounds.</p><div class="tags"><span>Sim</span><span>Game</span></div></div>
     </a>
-    <a class="card rv d4" href="/code-runner/">
+    <a class="card rv d4 extra" data-cat="games" href="/code-runner/">
       <div class="cover g3"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/code-runner.jpg" alt="Code Runner screenshot" loading="lazy"></div></div>
       <div class="body"><h3>Code Runner <span class="arrow">→</span></h3><p>A programming puzzle game where you write short command sequences to escape each level.</p><div class="tags"><span>Game</span><span>Puzzle</span></div></div>
     </a>
-    <a class="card rv d4" href="/logicgrid/">
+    <a class="card rv d4 extra" data-cat="games" href="/logicgrid/">
       <div class="cover g4"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img class="shot" src="img/projects/logicgrid.jpg" alt="LogicGrid screenshot" loading="lazy"></div></div>
       <div class="body"><h3>LogicGrid <span class="arrow">→</span></h3><p>A logic and pattern-solving puzzle game.</p><div class="tags"><span>Game</span><span>Logic</span></div></div>
     </a>
   </div>
-  <div class="more rv"><a class="btn ghost" href="#">see all 11 projects</a></div>
+  <div class="more rv"><button type="button" class="btn ghost" id="moreBtn">see all projects</button></div>
 </section>
 </div>
 
@@ -405,6 +408,13 @@
 
 
 <script>
+  // project grid: expand + filters
+  const grid=document.querySelector('#projects .grid'),moreBtn=document.getElementById('moreBtn'),fbtns=[...document.querySelectorAll('.filters button')];
+  moreBtn.addEventListener('click',()=>{const open=grid.classList.toggle('open');moreBtn.textContent=open?'show fewer':'see all projects';
+    if(open)grid.querySelectorAll('.card.extra').forEach(c=>c.classList.add('in'));else document.getElementById('projects').scrollIntoView({behavior:'smooth'});});
+  fbtns.forEach(b=>b.addEventListener('click',()=>{fbtns.forEach(x=>x.classList.toggle('on',x===b));const f=b.dataset.f;
+    grid.querySelectorAll('.card').forEach(c=>{c.classList.toggle('hide',f!=='all'&&!c.dataset.cat.split(' ').includes(f));c.classList.add('in');});
+    grid.classList.toggle('open',f!=='all');moreBtn.parentElement.style.display=f==='all'?'':'none';moreBtn.textContent='see all projects';}));
   // reveal
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
