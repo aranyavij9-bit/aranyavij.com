@@ -83,6 +83,54 @@
     {
       "source": "/cybersphere/:path+",
       "destination": "https://aranyavij-cybersphere.vercel.app/:path+"
+    },
+    {
+      "source": "/smart-study-os",
+      "destination": "https://aranyavij-smart-study-os.vercel.app/"
+    },
+    {
+      "source": "/smart-study-os/",
+      "destination": "https://aranyavij-smart-study-os.vercel.app/"
+    },
+    {
+      "source": "/smart-study-os/:path+",
+      "destination": "https://aranyavij-smart-study-os.vercel.app/:path+"
+    },
+    {
+      "source": "/schedulix",
+      "destination": "https://aranyavij-schedulix.vercel.app/"
+    },
+    {
+      "source": "/schedulix/",
+      "destination": "https://aranyavij-schedulix.vercel.app/"
+    },
+    {
+      "source": "/schedulix/:path+",
+      "destination": "https://aranyavij-schedulix.vercel.app/:path+"
+    },
+    {
+      "source": "/quantum-shift",
+      "destination": "https://aranyavij-quantum-shift.vercel.app/"
+    },
+    {
+      "source": "/quantum-shift/",
+      "destination": "https://aranyavij-quantum-shift.vercel.app/"
+    },
+    {
+      "source": "/quantum-shift/:path+",
+      "destination": "https://aranyavij-quantum-shift.vercel.app/:path+"
+    },
+    {
+      "source": "/signal-rush",
+      "destination": "https://aranyavij-signal-rush.vercel.app/"
+    },
+    {
+      "source": "/signal-rush/",
+      "destination": "https://aranyavij-signal-rush.vercel.app/"
+    },
+    {
+      "source": "/signal-rush/:path+",
+      "destination": "https://aranyavij-signal-rush.vercel.app/:path+"
     }
   ]
 }
